@@ -4,7 +4,22 @@ title:  "Using Partner SDK to record extended Telemetry"
 date:   2016-04-14 15:21:12 +0530
 categories: genie-service sdk android telemetry partner extended-telemetry
 ---
-# PARTNER SDK
+# Pre-requisite
+Have a look at [Consuming genie services SDKs in native Android]({% post_url 2016-04-14-using-genie-service-SDK %})
+for a better understanding on how to integrate with the Partner SDK.
+
+# Usage
+Partner SDK can be consumed by clients who want to send extended data which is is not already covered in [Content Telemetry specifications]({% post_url 2016-04-14-content-telemetry-spec %}).
+This extended data is encrypted on Genie and available for download from the Ekstep Cloud Platform as described at [Retrieving extended Telemetry](2016-04-04-retrieving-telemetry).
+
+Note that even though the extended data has no specifications, developers are advised to follow best practices and policies as described
+at [EkStep Data Policy and Limits]().
+
+# Dependencies
+Download the latest SDK and AIDL files from [here](https://platform.ekstep.org/downloads/content/repositories/production/org/ekstep/genieservices).
+
+# API
+Find the public methods for the Telemetry SDK below:
 
 *register*
 
